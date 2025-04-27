@@ -1,2 +1,13 @@
 @import "tailwindcss";
 
+.news{
+    
+          @apply flex items-center justify-between md:border-b-2 border-b-1; /* Assuming you want a standard 1px border-bottom on mobile */
+      
+} 
+
+.card{
+
+    @apply flex flex-col hover:scale-105 transition-all cursor-pointer md:flex-row items-center md:p-4 p-2 border border-[#DDE2E5] ml-8;
+    
+}
