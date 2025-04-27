@@ -8,6 +8,9 @@
 
 .card{
 
-    @apply flex flex-col hover:scale-105 transition-all cursor-pointer md:flex-row items-center md:p-4 p-2 border border-[#DDE2E5] ml-8;
+    @apply flex flex-col hover:scale-105 transition-all cursor-pointer md:flex-row items-center md:p-1  border border-[#DDE2E5] ml-8  ;
     
+}
+.span{
+    @apply bg-amber-300 md:p-1 border border-rounded;
 }

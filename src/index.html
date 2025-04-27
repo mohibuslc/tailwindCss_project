@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <title>Ticker AI</title>
 </head>
+
 <body class="bg-white text-gray-900">
 
   <header>
@@ -41,118 +43,128 @@
     </div>
   </section>
 
-  <section>
-    <section class="container grid grid-cols-12 md:px-0 px-4 pt-10 max-auto mb-8">
-      <section class="md:col-span-9 col-span-12 md:ml-5">
-        <div class="news">
-          <h3>ALL NEWS</h3>
-          <div class="flex items-center gap-2">
-            <p>Filter By</p>
-            <h4>Stock</h4>
-          </div>
+  <section class="container grid grid-cols-12 md:px-0 px-2 pt-2">
+    <!-- Left section -->
+    <section class="md:col-span-9 col-span-12 md:ml-5">
+      <div class="news">
+        <h3>ALL NEWS</h3>
+        <div class="flex items-center gap-2">
+          <p>Filter By</p>
+          <h4>Stock</h4>
         </div>
-      </section>
-    
+      </div>
 
-      <section class="md:col-span-3 col-span-12 md:mr-5 md:ml-[80px]">
+      <h2 class="text-2xl font-bold mt-4">Individual Stock</h2>
+
+      <!-- Card 1 -->
+      <div class="flex flex-col md:flex-row hover:scale-105 transition-all cursor-pointer items-center md:p-4 p-2 border border-[#DDE2E5] mt-4">
         <div>
-          <div class="border-b-2 border-b-1">
-            <h3 class="text-center uppercase ">Featured</h3>
+          <img src="./img/img.jpeg" class="w-full h-44 object-cover md:size-[150px]" alt="Stock Image" />
+        </div>
+        <div class="md:ml-3 flex flex-col gap-2">
+          <div class="flex gap-2">
+            <span>Mango</span>
+            <span>Mango</span>
+            <span>Mango</span>
+          </div>
+          <h3 class="text-[#333333] font-bold">NZD/USD forex technical analysis - traders will be monitoring Fed for future rate hike clues</h3>
+          <p class="text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat<br>duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <p>06 September 2022</p>
+            <p>Shouvik Nath</p>
           </div>
         </div>
-      </section>
-      <section class="md:col-span-9 col-span-12 md:ml-5">
-        <h2 class="items-center md:ml-8">Individual stock</h2>
+      </div>
 
-        <div class="card">
-          <div>
-            <img src="./img/img.jpeg" class="w-full h-44 object-cover md:size-[150px]" alt="Stock Image" />
-          </div>
-          <div class="md:ml-3 items-center gap-6">
-            <span>Mango</span>
-            <span>Mango</span>
-            <span>Mango</span>
-            <div>
-              <h3 class="text-[#333333]">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h3>
-            </div>
-            <div>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat <br>duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
-            </div>
-            <div class="flex items-center gap-4 mt-[30px]">
-              <p>06 September 2022</p>
-              <p>Shouvik Nath</p>
-            </div>
-          </div>
+      <!-- Card 2 -->
+      <div class="flex flex-col md:flex-row hover:scale-105 transition-all cursor-pointer items-center md:p-4 p-2 border border-[#DDE2E5] mt-4">
+        <div>
+          <img src="./img/card.svg" class="w-full h-44 object-cover md:size-[150px]" alt="Another Stock Image" />
         </div>
-
-        <div class="flex flex-col md:flex-row hover:scale-105 transition-all cursor-pointer items-center md:p-4 p-2 border border-[#DDE2E5] ml-8 mt-4">
-          <div>
-            <img src="./img/card.svg" class="w-full h-44 object-cover object-fit md:size-[150px]" alt="Another Stock Image" />
-          </div>
-          <div class="md:ml-3 items-center gap-6">
+        <div class="md:ml-3 flex flex-col gap-2">
+          <div class="flex gap-2">
             <span>Apple</span>
             <span>Stock</span>
             <span>Tech</span>
-            <div>
-              <h3 class="text-[#333333]">Apple announces new product launch event next month</h3>
-            </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-            </div>
-            <div class="flex items-center gap-4 mt-[30px]">
-              <p>15 October 2022</p>
-              <p>Jane Doe</p>
-            </div>
+          </div>
+          <h3 class="text-[#333333] font-bold">Apple announces new product launch event next month</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <p>15 October 2022</p>
+            <p>Jane Doe</p>
           </div>
         </div>
-        <div class="flex flex-col hover:scale-105 transition-all cursor-pointer md:flex-row items-center md:p-4 p-2 border border-[#DDE2E5] ml-8 mt-4">
-          <div>
-            <img src="./img/card1.svg" class="w-full h-44 object-cover object-fix md:size-[150px]" alt="Another Stock Image" />
-          </div>
-          <div class="md:ml-3 items-center gap-6">
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex flex-col md:flex-row hover:scale-105 transition-all cursor-pointer items-center md:p-4 p-2 border border-[#DDE2E5] mt-4">
+        <div>
+          <img src="./img/card1.svg" class="w-full h-44 object-cover md:size-[150px]" alt="Another Stock Image" />
+        </div>
+        <div class="md:ml-3 flex flex-col gap-2">
+          <div class="flex gap-2">
             <span>Apple</span>
             <span>Stock</span>
             <span>Tech</span>
-            <div>
-              <h3 class="text-[#333333]">Apple announces new product launch event next month</h3>
-            </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-            </div>
-            <div class="flex items-center gap-4 mt-[30px]">
-              <p>15 October 2022</p>
-              <p>Jane Doe</p>
-            </div>
+          </div>
+          <h3 class="text-[#333333] font-bold">Apple announces new product launch event next month</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <p>15 October 2022</p>
+            <p>Jane Doe</p>
           </div>
         </div>
-        <section class="md:ml-8 md:mt-[120px]">
-          <div>
-            <img src="./img/Stock.svg" alt="Stock Graphic"/>
+      </div>
+
+      <!-- Stock Image -->
+      <div class="md:ml-8 md:mt-[120px]">
+        <img src="./img/Stock.svg" alt="Stock Graphic" />
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flex flex-col md:flex-row hover:bg-black hover:text-amber-50  hover:scale-105 transition-all cursor-pointer items-center md:p-4 p-2 border border-[#DDE2E5] md:mt-7">
+        <div>
+          <img src="./img/card2.svg" class="w-full h-44 object-cover md:size-[150px]" alt="Stock Image" />
+        </div>
+        <div class="md:ml-3 flex flex-col gap-2  hover:text-amber-50  ">
+          <div class="flex gap-2">
+            <span>Mango</span>
+            <span>Mango</span>
+            <span>Mango</span>
           </div>
-          <div class="flex flex-col md:flex-row items-center md:p-4 p-2 border hover:scale-105 transition-all cursor-pointer border-[#DDE2E5] md:mt-7">
-            <div>
-              <img src="./img/card2.svg" class="w-full h-44 object-cover object-fix md:size-[150px]" alt="Stock Image" />
-            </div>
-            <div class="md:ml-3 items-center gap-6">
-              <span>Mango</span>
-              <span>Mango</span>
-              <span>Mango</span>
-              <div>
-                <h3 class="text-[#333333]">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h3>
-              </div>
-              <div>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat <br>duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
-              </div>
-              <div class="flex items-center gap-4 mt-[30px]">
-                <p>06 September 2022</p>
-                <p>Shouvik Nath</p>
-              </div>
-            </div>
+          <h3 class="text-[#333333] font-bold">NZD/USD forex technical analysis - traders will be monitoring Fed for future rate hike clues</h3>
+          <p class="text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat<br>duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <p>06 September 2022</p>
+            <p>Shouvik Nath</p>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
     </section>
+
+    <!-- Right section -->
+    <section class="md:col-span-3 col-span-12 md:mt-0 mt-5 md:ml-[80px]">
+      <div class="border-b-2 pb-0 space-y-4">
+        <h3 class="text-center uppercase font-semibold">Featured</h3>
+      </div>
+      <div>
+        <h2 class="text-left text-2xl font-bold mt-6">Daily Rundowns</h2>
+      </div>
+        <div class="mt-4">
+        <h2 class="text-lg font-semibold">Earnings:</h2>
+        <div class="flex flex-wrap gap-[7px] mt-2">
+          <span class="span">Csan</span>
+          <span class="span">Csan</span>
+          <span class="span">Csan</span>
+          <span class="span">Csan</span>
+        <span class="span">Csan</span>
+          <span class="span">Csan</span>
+        </div>
+      </div>
+    </section>
+
   </section>
 
 </body>
+
 </html>
