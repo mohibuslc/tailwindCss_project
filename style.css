@@ -11,6 +11,10 @@
     @apply flex flex-col hover:scale-105 transition-all cursor-pointer md:flex-row items-center md:p-1  border border-[#DDE2E5] ml-8  ;
     
 }
+
 .span{
-    @apply bg-amber-300 md:p-1 border border-rounded;
+
+
+    @apply bg-amber-100 border rounded p-1 hover:scale-105 transition-all cursor-pointer duration-300 bg-blend-color ;
+
 }
